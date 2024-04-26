@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>		
+		<link rel="stylesheet" href="libs/highlight.js/styles/default.css">
+    <link rel="stylesheet" href="libs/bootstrap-5.0.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap-icons-1.5.0/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+		<link rel="stylesheet" href="css/styles.css" /> 
+
+    <script src="libs/jquery-3.5.1.min.js"></script>
+		<title>翻译语法检查</title>
+	</head>
+	<body>
+    <div id="formatter" class="example large">
+      <div class="flex-container px-2">
+        <div class="flex-column">
+          <div class="buttons">
+            <button type="button" id="grammar" title="Check the your grammar..." class="btn btn-sm btn-success btnPad" aria-pressed= "false" data-toggle="button">
+              <span>翻译语法检查</span>
+              <i class="bi-spellcheck"></i>
+            </button> 
+            <select id="langs" class="form-select" style="width: 200px;display: inline !important"></select>
+            <button data-toggle="tooltip" title="Copy converted text to clipboard " id="copy" class="btn btn-sm btn-danger btnPad" >复制
+              <span class="bi-clipboard-plus"></span>
+            </button>
+            <button data-toggle="tooltip" id="clear" title="Clear text areas..." class="btn btn-sm btn-danger btnPad">
+              <span>清空</span>
+              <i class="bi-x-circle"></i>
+            </button>
+            <div class="message"></div>
+          </div>
+          <div>
+            <div class="form-group mt-2">
+              <code class="form-control html" id="convertedcode" contenteditable="true">在此键入或粘贴您的文本，然后单击 翻译语法检查 按钮...</code>
+            </div>
+          </div>
+          </div>  
+        </div> 
+        <div class="flex-container">
+          <div class="flex-row mt-2">	
+            <section>
+              <p class="counts" id="counts"></p>
+            </section>
+          </div>
+        </div>	
+    </div>
+
+    <script type="text/javascript" src="libs/bootstrap-5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/underscore-min.js"></script>
+    <script src="libs/underscore.string.min.js"></script>
+    <script src="libs/jquery.mark.min.js"></script>
+    <script src="libs/jquery.scrollintoview.js"></script>
+    <script src="libs/highlight.js/lib/highlight.js"></script>
+    <script src="libs/lz-string.min.js"></script>
+    <script src="app.js"></script>
+	</body>
+</html>
+
