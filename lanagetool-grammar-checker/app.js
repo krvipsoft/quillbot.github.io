@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   //});
               */
             
-            var jqxhr = $.post( "https://languagetool.org/api/v2/check", formData,  function( data ) {
+            var jqxhr = $.post( "https://api.languagetoolplus.com/v2/check", formData,  function( data ) {
                 //$( ".result" ).html( data );
                 //console.log(JSON.stringify( data) );
                 /* {
